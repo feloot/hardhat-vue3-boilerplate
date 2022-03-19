@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs", // Can't use esnext because Hardhat doesn't support ESM yet : https://github.com/NomicFoundation/hardhat/issues/1808
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "useDefineForClassFields": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "outDir": "dist",
+    "declaration": true
+  },
+  "types": [
+    "webpack-env",
+    "mocha",
+    "chai"
+  ],
+  "paths": {
+    "@/*": [
+      "src/*"
+    ]
+  },
+  "lib": [
+    "esnext",
+    "dom",
+    "dom.iterable",
+    "scripthost"
+  ],
+  "include": [
+    "./scripts",
+    "./typechain",
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    "./src/**/*.vue",
+    "./tests/**/*.ts",
+    "./tests/**/*.tsx",
+    "./tests/unit"
+  ],
+  "files": ["./hardhat.config.ts"],
+  "exclude": [
+    "node_modules"
+  ]
+}
