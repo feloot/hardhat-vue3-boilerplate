@@ -4,7 +4,7 @@ This is a pre-configured bootstrap project for developing a Vue3 SPA alongside H
 
 It uses :
 - TypeScript
-- Vue3 with VueX and Router
+- Vue3 with Composition API, VueX, Router
 - Webpack
 - SASS
 - ESLint
