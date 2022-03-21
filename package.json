@@ -5,8 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "vue:test": "vue-cli-service test:unit",
     "hardhat:test": "npx hardhat test",
+    "hardhat:test:node": "npx hardhat test --network localhost",
+    "vue:test": "vue-cli-service test:unit"
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
