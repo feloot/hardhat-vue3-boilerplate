@@ -26,11 +26,12 @@ module.exports = {
   overrides: [
     {
       files: [
-        "**/src/*.{j,t}s?(x)",
-        "**/src/*.app",
+        "**/src/**/*.{j,t}s?(x)",
+        "**/src/**/*.app",
+        "**/src/**/*.vue"
       ],
       env: {
-        browser: true,
+        browser: true, // Necessary for making the window variable available for instance
       },
     },
     {
